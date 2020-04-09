@@ -29,7 +29,7 @@ public class CrimeFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mCrime = new Crime();
+        mCrime = new Crime(UUID.randomUUID(), new Date());
     }
 
     @Nullable
