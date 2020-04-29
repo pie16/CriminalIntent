@@ -14,7 +14,7 @@ public class CrimeLab {
 
     private CrimeLab(Context context) {
         mCrimes = new ArrayList<>();
-        Random random = new Random();
+/*        Random random = new Random();
         //seed Crimes
         for (int i = 0; i < 100; i++) {
             Crime crime = new Crime(UUID.randomUUID(), new Date());
@@ -22,7 +22,11 @@ public class CrimeLab {
             crime.setSolved(i % 2 == 0); // Для каждого второго объекта
             crime.setRequiresPolice(random.nextBoolean());
             mCrimes.add(crime);
-        }
+        }*/
+    }
+
+    public void addCrime(Crime crime){
+        mCrimes.add(crime);
     }
 
     public static CrimeLab get(Context context) {

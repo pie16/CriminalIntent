@@ -9,9 +9,9 @@ public class Crime {
     private Date mDate;
     private boolean mRequiresPolice;
 
-    public Crime(UUID id, Date date) {
-        mId = id;
-        mDate = date;
+    public Crime() {
+        mId = UUID.randomUUID();
+        mDate = new Date();
     }
 
     public UUID getId() {

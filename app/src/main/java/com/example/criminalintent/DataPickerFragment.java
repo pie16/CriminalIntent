@@ -53,7 +53,6 @@ public class DataPickerFragment extends DialogFragment {
         return new AlertDialog.Builder(Objects.requireNonNull(getActivity()))
                 .setView(v)
                 .setTitle(R.string.date_picker_title)
-//                .setPositiveButton(R.string.ok, null)
                 .setPositiveButton(android.R.string.ok,
                         new DialogInterface.OnClickListener() {
                             @Override
