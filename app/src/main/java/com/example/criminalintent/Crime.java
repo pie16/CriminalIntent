@@ -8,6 +8,8 @@ public class Crime {
     private String mTitle;
     private Date mDate;
     private boolean mRequiresPolice;
+    private String mSuspect;
+
 
     public Crime(UUID id) {
         mId = id;
@@ -44,6 +46,14 @@ public class Crime {
     }
 
     private boolean mSolved;
+
+    public String getSuspect() {
+        return mSuspect;
+    }
+
+    public void setSuspect(String suspect) {
+        mSuspect = suspect;
+    }
 
     public boolean isRequiresPolice() {
         return mRequiresPolice;
